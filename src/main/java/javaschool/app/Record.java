@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by JavaCourses on 15.03.2017..
  */
-public class Record {
+public abstract class Record {
     private static int count = 0;
 
 
@@ -18,23 +18,6 @@ public class Record {
     }
 
     private String name;
-
-    private String address;
-    private final List<String> phones = new ArrayList<>();
-
-    public Record() {
-        count++;
-        id = count;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getName() {
         return name;
     }
@@ -43,17 +26,15 @@ public class Record {
         this.name = name;
     }
 
-    public List<String> getPhones() {
-        return phones;
-    }
-
-    public void addPhones(String... phones) {
-        this.phones.addAll(Arrays.asList(phones));
-    }
 
 
-    @Override
-    public String toString() {
-        return id + " " + name + " " + phones + " " + address + " ---- " + count;
+
+
+    public Record() {
+        count++;
+        id = count;
     }
+
+
+
 }
