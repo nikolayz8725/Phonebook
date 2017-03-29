@@ -42,7 +42,8 @@ public class PhoneBook {
         List<Record> result = new ArrayList<>();
         for (Record r: recordList){
             String name = r.getName() .toLowerCase();
-            if(name.contains(str)){
+            String addres = r.getAddress().toLowerCase();
+            if(name.contains(str)||addres.contains(str)){
                 result.add(r);
             }
         }
