@@ -18,6 +18,7 @@ public abstract class Record {
     }
 
     private String name;
+
     public String getName() {
         return name;
     }
@@ -27,14 +28,10 @@ public abstract class Record {
     }
 
 
-
-
-
     public Record() {
         count++;
         id = count;
     }
-
 
 
 }

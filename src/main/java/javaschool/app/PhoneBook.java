@@ -24,7 +24,7 @@ public class PhoneBook {
     }
 
     @Command
-    public void createNote(String note) {
+    public void createNote(String name, String note) {
 
         Note r = new Note();
 

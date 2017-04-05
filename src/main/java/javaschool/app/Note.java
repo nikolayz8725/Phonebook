@@ -1,11 +1,6 @@
 package javaschool.app;
 
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Created by JavaCourses on 29.03.2017..
- */
 public class Note extends Record {
     private String note;
 
@@ -18,6 +13,6 @@ public class Note extends Record {
     }
 
     public String toString() {
-        return getId() + " " + getName() + "" + getNote();
+        return getId() + " " + getName() + " " + getNote();
     }
 }
